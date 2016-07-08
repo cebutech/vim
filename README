@@ -1,0 +1,27 @@
+#Run vim , then "BundleInstall"
+#Basic VIMRC file
+
+set nocompatible
+filetype off  "important!
+ 
+set rtp+=~/.vim/bundle/vundle/
+ 
+call vundle#rc()
+ 
+filetype plugin indent on     "important!
+ 
+"repositories on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ 
+"repositories vim/scripts
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'rails.vim'
+ 
+"git repositories (not on github)
+Bundle 'git://git.wincent.com/command-t.git'
+ 
+"local git repository(if you are working on your own plugin)
+Bundle 'file:///Users/name/path/to/plugin'
